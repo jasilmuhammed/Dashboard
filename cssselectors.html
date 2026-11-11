@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+
+        #box1{
+            border: 3px solid red;
+        }
+        #span1{
+            color:blue;
+        }
+        /* descent selector */
+        .container p{
+            background-color:aqua;
+        }
+        /* child selector */
+        .container>p{
+            background-color: aqua;
+        }
+        /* adjascent sibling selector */
+        .container+p{
+            background-color: aqua;
+        }
+        /* general sibling selector */
+        .container~p{
+            background-color: aqua;
+        }
+
+        a:link{
+            color:red;
+        }
+        a:visited{
+            color:green;
+        }
+        a:hover{
+            color:blue;
+        }
+
+        a:active{
+            background-color:black;
+        }
+
+        img{
+            opacity:0.5;
+        }
+        img:hover{
+            opacity:1;
+        }
+
+        p::first-line{
+            color:red;
+        }
+        p::first-letter{
+            color: black;
+        }
+         h1{color:blue;}
+
+        li:first-child{
+            color:blue;
+        }
+
+        input:focus{
+            background-color:yellow;
+        }
+
+        #para1::before{
+            content:"before";
+        }
+        #para1::after{
+            content:"*****";
+        }
+
+        ::selection{
+            background-color: bisque;
+            color:black;
+        }
+
+        ::marker{
+            color:rgb(144,144,168);
+        }
+
+        *{
+            color:red;
+        }
+
+
+
+    </style>
+
+    <h1 id="head1">CSS selectors</h1>
+    <ul>
+        <li>Element selector -tagname,id,class name</li>
+        <li>combinators
+            <ul>
+                <Li>descendent selector(space)</Li>
+                <li>child selector(>)</li>
+                <li>adjascent sibling selector(+)</li>
+                <li>general sibling selector(~)</li>
+            </ul>
+        </li>
+        <li>pseudo-class selectors
+            <ul type="square">
+                <li>link</li>
+                <li>visited</li>
+                <li>hover</li>
+                <li>active</li>
+                <li>focus</li>
+                <li>first-child</li>
+            </ul>
+        </li>
+        <li>pseudo-element selectors
+            <ul>
+                <li>first-line</li>
+                <li>first-letter</li>
+                <li>before</li>
+                <li>after</li>
+                <li>selection</li>
+                <li>marker</li>
+            </ul>
+        </li>
+    </ul>
+
+
+    <div id="box1">
+        <h1>Heading</h1>
+        <p><span id="span1">lorem ipsum dolor</span>Nature is one of the most beautiful gifts in our world.It gives us fresh air, water, and peaceful surroundings.Trees, flowers, rivers, and mountains make our planet beautiful.We should protect nature by planting trees and reducing pollution.</p>
+    </div>
+
+    <span>inline element</span>
+
+    <div class="container">
+        <p>paragraph1</p>
+        <section>
+            <p>paragraph2</p>
+        </section>
+        <p>paragraph3</p>
+    </div>
+
+    <p>paragraph4</p>
+    <p>paragraph5</p>
+
+    <div class="container">
+        <p>paragraph6</p>
+        <p>paragraph7</p>
+    </div>
+
+    <hr>
+    
+    <a href="https://www.w3schools.com/html/">HTML</a><br>
+
+    <img src="images (1).jpg" alt="">
+
+    <ul>
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+        <li>item4</li>
+    </ul>
+
+    <input type="text">
+
+    <hr>
+
+    <p id="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+
+</body>
+</html>

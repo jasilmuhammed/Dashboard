@@ -1,0 +1,168 @@
+/* transition and animations */
+
+.box1{
+    width: 200px;
+    height: 150px;
+    background-color: rgb(255, 8, 0);
+    /* transition: background-color ease-in 2s ; */
+    /* transition: background-color 3s linear 2s ; */
+    /* transition: heighr 3s ease-in 2s; */
+    transition: height 3s ease-in 2s;
+}
+
+.box1.hover{
+    background-color: rgb(190, 126, 249);
+    width: 300px;
+    height: 200px;
+}
+
+.box2{
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+    animation: move 2s infinite;
+    animation-direction: alternate;
+}
+/* 
+   @keyframes move {
+    from{
+        background-color: blue;
+    }
+    to{
+        background-color: green;
+     }  
+} */
+/* @keyframes move {
+    0%{
+        background-color: blue;
+    }
+    25%{
+        background-color: green;
+    }
+    50%{
+        background-color: red;
+    }
+    75%{
+        background-color: aquamarine;
+    }
+    100%{
+        background-color: blue;
+    }
+    
+} */
+
+/* @keyframes move {
+    0%{
+        transition: translate(0px,300px);
+        transition: rotate(45deg) 
+        transition: skew(45deg) 
+        transition: scale(width,height)
+    }
+    
+} */
+
+/* @keyframes move {
+    0%{
+        transform: translate(0px,0px) rotate(30deg);
+    }
+    25%{
+        transform: translate(300px,0px) rotate(45deg);
+    }
+    50%{
+        transform: translate(300px,300px) rotate(60deg);
+    }
+    75%{
+        transform: translate(0px,300px) rotate(75deg);
+    }
+    100%{
+        transform: translate(0px,0px) rotate(90deg);
+    }
+    
+} */
+
+/* .box3{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50%;
+    animation: ball 3s infinite alternate ease-in-out;
+} */
+
+@keyframes ball {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(400px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+
+.traffic{
+    width: 250px;
+    height: 350px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.red{
+    width: 75px;
+    height: 75px;
+    background-color: red;
+    border-radius: 50%;
+    animation: red 4s infinite;
+}
+
+.orange{
+    width: 75px;
+    height: 75px;
+    background-color: orange;
+    border-radius: 50%;
+    animation: orange 4s infinite;
+}
+
+.green{
+    width: 75px;
+    height: 75px;
+    background-color: green;
+    border-radius: 50%;
+    animation: green 4s infinite;
+}
+
+@keyframes red {
+    0%,30%{
+        background-color: red;
+    }
+    34%,100%{
+        background-color: rgb(118, 116, 116);
+    }
+
+}
+
+@keyframes orange{
+    0%, 33%{
+        background-color: rgb(118, 116, 116); 
+    }
+    34%,66%{
+        background-color: orange;
+    }
+    67%,100%{
+        background-color: rgb(118, 116, 116);
+    }
+}
+
+@keyframes green{
+    0%,66%{
+        background-color: rgb(118, 116, 116);
+    }
+    67%,100%{
+        background-color: green;
+    }
+}

@@ -1,0 +1,188 @@
+/* .container{
+    width: 300px;
+    height: 250px;
+    background-color: aqua;
+    position:relative
+}
+
+
+.box{
+    width: 100px;
+    height: 70px;
+    background-color: blue;
+    position: absolute;
+    /* position: relative */
+    /* left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom:0px
+} */ 
+
+/* .container{
+    border: 1px solid gray;
+    text-align: center;
+    position: fixed;
+    top: 0px;
+    /* position: sticky;
+    top: 0px; 
+    width: 100%;
+} 
+
+.box1,.box2{
+    width: 100%;
+    height: 700px;
+   
+}
+
+.box1{
+    background-color: beige;
+}
+.box2{
+    background-color: rgb(194,194,40);
+} */
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    border: 1px solid black;
+    /* display: inline; */
+    /* display: block; */
+    display: inline-block;
+}
+
+.flex-containers{
+    /* width: 100px; */
+    /* height: 450px; */
+    background-color: bisque;
+    display: flex;
+    /* flex-direction: row;
+    flex-direction: row-reverse; */
+    /* flex-direction: column-reverse; */
+    /* justify-content: space-around; */
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.box1{
+    width: 100px;
+    height:100px;
+    background-color: blueviolet;
+    border: 1px solid black;
+}
+
+/*Grid*/
+
+.grid-container{
+    /* width: 100%; */
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 500px 500px;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+
+
+.box2{
+    /* width: 100px; */
+    height: 100%;
+    background-color: blueviolet;
+    border: 1px solid black;
+}
+
+
+
+.overflow{
+    width: 300px;
+    height: 250px;
+    background-color: aquamarine;
+    /* overflow: visible; */
+    /* overflow: hidden; */
+    /* overflow: scroll; */
+    overflow: auto;
+}
+
+.red{
+    width: 300px;
+    height: 250px;
+    /* border: 2px solid red; */
+    background-color: red;
+    position: relative;
+}
+
+.green{
+    width: 100px;
+    height: 70px;
+    /* border: 2px solid green; */
+    background-color: green;
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+
+}
+
+.blue{
+    width: 50px;
+    height: 50px;
+    /* border: 2px solid blue; */
+    background-color: blue;
+    position: absolute;
+    z-index: 2;
+    top: 0px;
+}
+.float{
+    width: 300px;
+    height: 200px;
+    background-color: aqua;
+    float: right;
+}
+
+.float h1{
+    /* float: right; */
+    float: inherit;
+    /* float: none; */
+}
+
+ul{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    background-color: antiquewhite;
+    width: 200px;
+}
+
+
+
+li a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 10px 20px;
+}
+
+li a:hover{
+    background-color: grey;
+    color: white;
+    color: aliceblue;
+}
+
+.about{
+    width: 100%;
+    height: 600px;
+    background-color: aquamarine;
+}
+
+.skills{
+    width: 100%;
+    height: 500px;
+    background-color: bisque;
+}
+
+.contact{
+    width: 100%;
+    height: 700px;
+    background-color: rgb(150, 95, 24);
+}
+
+
